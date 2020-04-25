@@ -9,7 +9,7 @@ server:
     min-spare-threads: 50 # Minimum amount of worker threads
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/cloud?useUnicode=true&characterEncoding=UTF8&useSSL=false&autoReconnect=true
+    url: jdbc:mysql://192.168.11.129:3306/cloud?useUnicode=true&characterEncoding=UTF8&useSSL=false&autoReconnect=true
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456
@@ -22,12 +22,12 @@ spring:
     hikari:
       minimum-idle: 0
   redis:
-    host: 192.168.3.22
+    host: 192.168.11.129
     port: 6379
     
 
   rabbitmq:
-    host: 127.0.0.1
+    host: 192.168.11.129
     port: 5672
     username: guest
     password: guest
